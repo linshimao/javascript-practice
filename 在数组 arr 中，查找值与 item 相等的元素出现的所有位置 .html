@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>在数组 arr 中，查找值与 item 相等的元素出现的所有位置 </title>
+</head>
+
+<body>
+	<script>
+		function findAllOccurrences(arr, target) {
+			var new_arr = [];
+			for (var i = 0; i <= arr.length; i++) {
+				if (arr[i] == target) {
+					new_arr.push(i);
+				}
+			}
+			return new_arr;
+		}
+		console.log(findAllOccurrences([1, 1, 1, 1, 1, 1, 1, 2], 1));
+	</script>
+</body>
+
+</html>

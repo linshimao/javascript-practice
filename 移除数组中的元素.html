@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>移除数组中的元素</title>
+</head>
+
+<body>
+	<script>
+		function remove(arr, item) {
+			var newResult = arr.filter(function (k) {
+				return (k != item);
+			});
+			return newResult;
+		}
+		console.log(remove([1, 4, 8, 5, 5, 6, 6, 1, 4], 5));
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>为数组 arr 中的每个元素求二次方。不要直接修改数组 arr，结果返回新的数组 </title>
+</head>
+
+<body>
+	<script>
+		function square(arr) {
+			var newArr = [];
+			var theResult = [];
+			var new_func = function () {
+				for (var i = 0; i < arr.length; i++) {
+					newArr.push(arr[i]);
+				}
+				return newArr;
+			};
+			new_func();
+			for (var i = 0; i < newArr.length; i++) {
+				theResult.push(newArr[i] * newArr[i]);
+			}
+			return theResult;
+		}
+		console.log(square([1, 7, 6, 4, 2]));
+	</script>
+</body>
+
+</html>
